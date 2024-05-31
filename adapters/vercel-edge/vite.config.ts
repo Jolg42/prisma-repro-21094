@@ -12,5 +12,10 @@ export default extendConfig(baseConfig, () => {
       outDir: ".vercel/output/functions/_qwik-city.func",
     },
     plugins: [vercelEdgeAdapter()],
+    resolve: {
+      alias: {
+        ".prisma/client/default": "./node_modules/.prisma/client/default.js",
+      },
+    },
   };
 });
