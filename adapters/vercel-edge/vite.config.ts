@@ -15,6 +15,7 @@ export default extendConfig(baseConfig, () => {
     resolve: {
       alias: {
         ".prisma/client/default": "./node_modules/.prisma/client/default.js",
+        "./query_engine_bg.wasm?module": "./node_modules/.prisma/client/query_engine_bg.wasm?init",
       },
     },
   };
